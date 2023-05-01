@@ -4,6 +4,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "start": "tsc && node dist/main.js",
     "mikro-orm": "node --loader ts-paths-esm-loader --experimental-specifier-resolution=node -r tsconfig-paths/register ./node_modules/@mikro-orm/cli/esm.js"
   },
   "dependencies": {

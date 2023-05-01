@@ -1,8 +1,9 @@
-import { Options } from "@mikro-orm/postgresql";
-import { User } from "./User";
+import { Options } from '@mikro-orm/postgresql';
 
-const mikroOrmConfig: Options = {
-  entities: [User],
+import { DemoVersion } from './DemoVersion';
+
+export const mikroOrmConfig: Options = {
+  entities: [DemoVersion],
 
   type: "postgresql",
   dbName: "selfreferencerepro",
