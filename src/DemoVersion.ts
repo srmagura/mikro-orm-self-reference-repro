@@ -8,11 +8,11 @@ import {
 
 @Entity()
 export class DemoVersion {
-  @PrimaryKey()
+  @PrimaryKey({ type: "int" })
   id!: number;
 
   @OneToOne(() => DemoVersion, { ref: true, nullable: true })
-  parent: Ref<DemoVersion> | null;
+  parent!: Ref<DemoVersion> | null;
 
   constructor(parentId: number | undefined) {
     this.parent =
